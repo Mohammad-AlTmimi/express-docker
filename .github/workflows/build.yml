@@ -24,3 +24,4 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag ghcr.io/mohammad-altmimi/express-docker:$(date +%s)
+   
